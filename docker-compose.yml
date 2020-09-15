@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  webapp:
+    tty: true
+    build: .
+    command: yarn start
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./src:/app/capacitacion-webapp/src
+      - ./public:/app/capacitacion-webapp/public
