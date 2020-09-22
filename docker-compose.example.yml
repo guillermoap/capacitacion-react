@@ -6,7 +6,7 @@ services:
       context: ${PARENT_PWD}/capacitacion-webapp
     command: yarn start
     ports:
-      - '${PORT}:${PORT}'
+      - '5002:5002'
     volumes:
       - "${PARENT_PWD}/capacitacion-webapp/src:/app/capacitacion-webapp/src"
       - "${PARENT_PWD}/capacitacion-webapp/public:/app/capacitacion-webapp/public"
