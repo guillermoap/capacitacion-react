@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  webapp:
+    tty: true
+    build: 
+      context: /home/dlabs/decemberLabs/capacitacion-webapp
+    command: yarn start
+    ports:
+      - '5000:5000'
+    volumes:
+      - /home/dlabs/decemberLabs/capacitacion-webapp/src:/app/capacitacion-webapp/src
+      - /home/dlabs/decemberLabs/capacitacion-webapp/public:/app/capacitacion-webapp/public
